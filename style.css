@@ -7,45 +7,78 @@ body{
 }
 
 header {
+    display: flex;
+    justify-content: space-around;
     margin: 0%;
     padding: 5px;
     background-color: #1F2937;
     
 }
-header ul{
+header .column1 ul {
+    /*border: solid;*/
     display: flex;
-    flex-flow: wrap;
-    
-    color: white;
-    font-size: 12px;
-    font-weight: extra-bold;
-    
+    justify-content: space-around;
+    margin-left: 185px;
+    width: 300px;
+}
+
+#header-links {
+    margin-left: auto;
+    color: #F9FAF8;
+    display: flex wrap;
+    flex-direction: row-reverse;
+}
+
+#header-links ul {
+    list-style-type: none;
+    display: inline-flex;
+    width: fit-content;
+    margin-right: 200px;
     
 }
 
-header ul li{
+#header-links ul li{
+    padding: 1px 20px;
+}
+
+#header-links ul li a {
     text-decoration: none;
-    width: content;
-    margin: 0 1em;
+    color: white;
 }
 
 .headerlogo {
-    margin-right: auto;
-    text-decoration: none;
+   
+    list-style-type: none;
+    font-size: 24px;
+    font-family: sans-serif;
+    
+    font-weight: 600;
+    color: white;
+    
 }
 
 /*section 1 styles*/
 .section1 {
+    margin: 0;
+
     display: flex;
     justify-content: space-around;
     background-color: #1F2937;
-    color:white;
+    color: #F9FAF8;
     padding-bottom: 5em;
+    
 }
 
-#column1 {
+.column1 {
+    /*border: solid white;*/
     display: flex;
     flex-flow: column wrap;
+    max-width: 400px;
+    min-width: 400px;
+    flex-flow: column wrap;
+    font-size: 18px;
+    margin-left: 0px;
+    
 }
 
 .button {
@@ -55,25 +88,52 @@ header ul li{
     background-color: #1669dd;
 }
 
-#column2 {
+.column2 {
     display: flex;
     flex-flow: column;
 }
 
+#image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    width: 400px;
+
+}
+
 /*section 2 styles*/
-.section2 {
-    display: flex wrap;
+#section2-heading {
+    display: flex;
     justify-content: center;
 }
+
+h2 {text-align: center;}
+
 .boxes {
     display: flex;
     justify-content: center;
 }
-.boxes .box {
+
+.box-column {
+    display: flex;
+    flex-flow: column wrap;
+    width: 150px;
+    margin: 50px;
+}
+
+.box-column .box {
     border: solid 2px #1669dd;
     border-radius: .5em;
     padding: 3em;
-    margin: 3em;
+    margin-bottom: 2rem;
+    width: 100%;
+    height: 150px;
+}
+
+.box-column .box-text {
+    width: 100%;
+    text-align: center;
 }
 /*section 3 styles*/
 .section3 {
@@ -120,4 +180,4 @@ blockquote {
     align-self: center;
    
     
-}
+}*/
